@@ -1,0 +1,7 @@
+#+TITLE: Grannie (web) Roadmap
+
+* DONE Create starter project.
+  - State "DONE"       from "TODO"       [2020-03-07 Sat 16:35]
+* DONE Compile JS from TypeScript.
+  - State "DONE"       from "TODO"       [2020-03-07 Sat 16:35]
+* TODO Compile CSS from SCSS.
