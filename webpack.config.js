@@ -26,6 +26,20 @@ module.exports = {
         }
       },
       {
+        test: /\.(scss|sass)$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -62,7 +76,7 @@ module.exports = {
     }),
 
     new TypedCssModulesPlugin({
-      globPattern: './app/**/*.css'
+      globPattern: './app/**/*.{css,scss,sass}'
     }),
 
     new webpack.NamedModulesPlugin()
