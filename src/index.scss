@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.grannie-body {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.grannie-app {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: #202B33;
+}
+
+.icon {
+  font-size: 16px;
+  padding-right: 8px;
+  font-weight: 500;
+}
+
+.noselect {
+  user-select: none;
+}
+
+.top-row {
+  align-items: center;
+  padding: 8px 16px;
+  justify-content: space-between;
+}
+
+/**
+ * FLEX
+ */
+
+.flex-v-box {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+}
+
+.flex-h-box {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+/**
+ * SIDEBAR
+ * TODO: Move to Sidebar-specific scss.
+ */
+
+.sidebar-container {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  width: 232px;
+  z-index: 999;
+  transition: all 200ms ease-in;
+  background-color: #FCFCFC;
+  color: #212121;
+
+  .sidebar-content {
+    flex: 1 1 0px;
+    height: 100%;
+    position: relative;
+  }
+
+  .sidebar-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    font-weight: bolx;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-size: 14px;
+    color: #212121;
+  }
+
+  .starred-pages-wrapper {
+    color: #5C7080;
+    flex: 1 1 0px;
+    padding: 8px 20px;
+  }
+}
+
+/**
+ * WORKSPACE
+ */
+.workspace {
+  width: 100%;
+  display: flex;
+}
