@@ -1,0 +1,47 @@
+$sidebar-bg-color: rgb(247, 246, 243);
+$sidebar-fg-color: rgba(25, 23, 17, 0.6);
+
+.top-row {
+  align-items: center;
+  padding: 8px 16px;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(220, 220, 220);
+}
+
+.sidebar-container {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  width: 232px;
+  z-index: 999;
+  transition: all 200ms ease-in;
+  background-color: $sidebar-bg-color;
+  color: $sidebar-fg-color;
+
+  .sidebar-content {
+    flex: 1 1 0px;
+    height: 100%;
+    position: relative;
+  }
+
+  .sidebar-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    font-weight: bolx;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-size: 14px;
+    color: $sidebar-fg-color;
+  }
+
+  .starred-pages-wrapper {
+    color: $sidebar-fg-color;
+    flex: 1 1 0px;
+    padding: 8px 20px;
+  }
+}

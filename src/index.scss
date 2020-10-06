@@ -35,12 +35,6 @@ code {
   user-select: none;
 }
 
-.top-row {
-  align-items: center;
-  padding: 8px 16px;
-  justify-content: space-between;
-}
-
 /**
  * FLEX
  */
@@ -54,46 +48,6 @@ code {
 .flex-h-box {
   display: flex;
   flex: 0 0 auto;
-}
-
-/**
- * SIDEBAR
- * TODO: Move to Sidebar-specific scss.
- */
-
-.sidebar-container {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  width: 232px;
-  z-index: 999;
-  transition: all 200ms ease-in;
-  background-color: #FCFCFC;
-  color: #212121;
-
-  .sidebar-content {
-    flex: 1 1 0px;
-    height: 100%;
-    position: relative;
-  }
-
-  .sidebar-button {
-    display: flex;
-    align-items: center;
-    padding: 8px 20px;
-    font-weight: bolx;
-    cursor: pointer;
-    flex: 0 0 auto;
-    font-size: 14px;
-    color: #212121;
-  }
-
-  .starred-pages-wrapper {
-    color: #5C7080;
-    flex: 1 1 0px;
-    padding: 8px 20px;
-  }
 }
 
 /**
