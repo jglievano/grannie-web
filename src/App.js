@@ -4,10 +4,12 @@ import Workspace from './components/Workspace';
 
 function App() {
   return (
-    <div className="grannie-body">
-      <div className="grannie-app">
-        <Sidebar></Sidebar>
-        <Workspace></Workspace>
+    <div className="app">
+      <div className="app-inner">
+        <div className="cursor-listener">
+          <Sidebar></Sidebar>
+          <Workspace></Workspace>
+        </div>
       </div>
     </div>
   );
